@@ -251,4 +251,12 @@ a {
     font-size: 0.7rem;
     padding: 3px;
   }
+
+  .split-left-side {
+    background-position: left top;
+  }
+
+  .split-right-side {
+    background-position: left center;
+  }
 }

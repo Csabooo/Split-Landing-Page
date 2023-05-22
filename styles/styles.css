@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+root {
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 3rem;
+  z-index: 1;
+}
+
+a {
+  max-width: 70%;
+  width: 250px;
+  margin: 0 auto;
+  color: white;
+  text-decoration: none;
+  border: solid 2px white;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.5s ease-in-out;
+}
+
+right a:hover {
+  background-color: rgb(106, 226, 243);
+}
+
+.split-left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  background: url("../cat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  overflow: hidden;
+}
+
+.split-left-side::before {
+  position: absolute;
+  content: "";
+  background: rgb(106, 226, 243, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.split-right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  background: url("../dog.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.split-right-side::before {
+  display: flex;
+  position: absolute;
+  content: "";
+  background: rgb(224, 202, 121, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.split-right-side,
+.split-left-side,
+.split-right-side::before,
+.split-left-side::before {
+  transition: all 1000ms ease-in-out;
+}
+
+.hover-left .left {
+  width: 75%;
+  background-position: 0 10%;
+}
+
+.hover-left .right {
+  width: 25%;
+}
+
+.hover-right .right {
+  width: 75%;
+  background-position: 0 40%;
+}
+
+.hover-right .left {
+  width: 25%;
+}
+
+@media (max-width: 480px) {
+  a {
+    width: 76%;
+    font-size: 0.7rem;
+    padding: 3px;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+root {
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 3rem;
+  z-index: 1;
+}
+
+a {
+  max-width: 70%;
+  width: 250px;
+  margin: 0 auto;
+  color: white;
+  text-decoration: none;
+  border: solid 2px white;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.left a:hover {
+  background-color: rgb(106, 226, 243);
+}
+
+.right a:hover {
+  background-color: rgb(224, 202, 121);
+}
+
+.split-left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  background: url("../cat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  overflow: hidden;
+}
+
+.split-left-side::before {
+  position: absolute;
+  content: "";
+  background: rgb(106, 226, 243, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.split-right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  background: url("../dog.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.split-right-side::before {
+  display: flex;
+  position: absolute;
+  content: "";
+  background: rgb(224, 202, 121, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.split-right-side,
+.split-left-side,
+.split-right-side::before,
+.split-left-side::before {
+  transition: all 1000ms ease-in-out;
+}
+
+.hover-left .left {
+  width: 75%;
+  background-position: 0 10%;
+}
+
+.hover-left .right {
+  width: 25%;
+}
+
+.hover-right .right {
+  width: 75%;
+  background-position: 0 40%;
+}
+
+.hover-right .left {
+  width: 25%;
+}
+
+@media (max-width: 480px) {
+  a {
+    width: 76%;
+    font-size: 0.7rem;
+    padding: 3px;
+  }
+}
